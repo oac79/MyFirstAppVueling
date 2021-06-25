@@ -31,7 +31,7 @@ namespace MyFirstAppVueling.Tests
         public void MultiplyTest()
         {
             Calculator calculator = new Calculator();
-            Assert.IsTrue(calculator.Subtract(4, 2) == 8);
+            Assert.IsTrue(calculator.Multiply(4, 2) == 8);
             //Assert.Fail();
         }
 
