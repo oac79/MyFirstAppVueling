@@ -1,7 +1,7 @@
 ﻿
 namespace MyFirstAppVueling.ForLoop
 {
-    partial class frmForEach
+    partial class frmForLoop
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,74 @@ namespace MyFirstAppVueling.ForLoop
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.textAge = new System.Windows.Forms.TextBox();
+            this.textSurname = new System.Windows.Forms.TextBox();
+            this.textName = new System.Windows.Forms.TextBox();
+            this.textStudentId = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // textAge
+            // 
+            this.textAge.Location = new System.Drawing.Point(316, 278);
+            this.textAge.Name = "textAge";
+            this.textAge.Size = new System.Drawing.Size(169, 20);
+            this.textAge.TabIndex = 9;
+            // 
+            // textSurname
+            // 
+            this.textSurname.Location = new System.Drawing.Point(316, 216);
+            this.textSurname.Name = "textSurname";
+            this.textSurname.Size = new System.Drawing.Size(169, 20);
+            this.textSurname.TabIndex = 8;
+            // 
+            // textName
+            // 
+            this.textName.Location = new System.Drawing.Point(316, 155);
+            this.textName.Name = "textName";
+            this.textName.Size = new System.Drawing.Size(169, 20);
+            this.textName.TabIndex = 7;
+            // 
+            // textStudentId
+            // 
+            this.textStudentId.Location = new System.Drawing.Point(316, 99);
+            this.textStudentId.Name = "textStudentId";
+            this.textStudentId.Size = new System.Drawing.Size(169, 20);
+            this.textStudentId.TabIndex = 6;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(316, 332);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // frmForLoop
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textAge);
+            this.Controls.Add(this.textSurname);
+            this.Controls.Add(this.textName);
+            this.Controls.Add(this.textStudentId);
+            this.Controls.Add(this.btnSave);
+            this.Name = "frmForLoop";
             this.Text = "frmForEach";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textAge;
+        private System.Windows.Forms.TextBox textSurname;
+        private System.Windows.Forms.TextBox textName;
+        private System.Windows.Forms.TextBox textStudentId;
+        private System.Windows.Forms.Button btnSave;
     }
 }
