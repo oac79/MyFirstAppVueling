@@ -1,15 +1,8 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyFirstAppVueling.ForeachLoop
+namespace MyFirstAppVueling.EntityStudent
 {
     public partial class frmForEach : Form
     {
@@ -36,6 +29,26 @@ namespace MyFirstAppVueling.ForeachLoop
                     " " + ((Student)_student).Surname +
                     " " + ((Student)_student).Age);
             }
+        }
+
+        private void textSurname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textStudentId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textAge_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

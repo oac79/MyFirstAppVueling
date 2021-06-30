@@ -1,4 +1,4 @@
-﻿using MyFirstAppVueling.ForeachLoop;
+﻿using MyFirstAppVueling.EntityStudent;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -39,8 +39,8 @@ namespace MyFirstAppVueling.ForLoop
                 KeyValuePair<Guid, Student> entry = students.ElementAt(_i);
                 if (entry.Value.Name.Equals("Pepe"))
                 {
-                    MessageBox.Show("Pepe is found: " + entry.Value.Name +
-                       "is welcome, and his Guid is " +
+                    _ = MessageBox.Show("Pepe is found: " + entry.Value.Name +
+                       " is welcome, and his Guid is " +
                        entry.Value.Guid.ToString());
                 }
                 _i++;

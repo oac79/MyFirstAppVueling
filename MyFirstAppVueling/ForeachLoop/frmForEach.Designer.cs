@@ -1,5 +1,5 @@
 ﻿
-namespace MyFirstAppVueling.ForeachLoop
+namespace MyFirstAppVueling.EntityStudent
 {
     partial class frmForEach
     {
@@ -52,6 +52,7 @@ namespace MyFirstAppVueling.ForeachLoop
             this.textStudentId.Name = "textStudentId";
             this.textStudentId.Size = new System.Drawing.Size(169, 20);
             this.textStudentId.TabIndex = 1;
+            this.textStudentId.TextChanged += new System.EventHandler(this.textStudentId_TextChanged);
             // 
             // textName
             // 
@@ -59,6 +60,7 @@ namespace MyFirstAppVueling.ForeachLoop
             this.textName.Name = "textName";
             this.textName.Size = new System.Drawing.Size(169, 20);
             this.textName.TabIndex = 2;
+            this.textName.TextChanged += new System.EventHandler(this.textName_TextChanged);
             // 
             // textSurname
             // 
@@ -66,6 +68,7 @@ namespace MyFirstAppVueling.ForeachLoop
             this.textSurname.Name = "textSurname";
             this.textSurname.Size = new System.Drawing.Size(169, 20);
             this.textSurname.TabIndex = 3;
+            this.textSurname.TextChanged += new System.EventHandler(this.textSurname_TextChanged);
             // 
             // textAge
             // 
@@ -73,6 +76,7 @@ namespace MyFirstAppVueling.ForeachLoop
             this.textAge.Name = "textAge";
             this.textAge.Size = new System.Drawing.Size(169, 20);
             this.textAge.TabIndex = 4;
+            this.textAge.TextChanged += new System.EventHandler(this.textAge_TextChanged);
             // 
             // frmForEach
             // 
