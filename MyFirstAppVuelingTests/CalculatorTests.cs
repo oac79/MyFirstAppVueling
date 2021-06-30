@@ -1,11 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MyFirstAppVueling;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using static Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 namespace MyFirstAppVueling.Tests
 {
     [TestClass()]
@@ -15,7 +9,7 @@ namespace MyFirstAppVueling.Tests
         public void AddTest()
         {
             Calculator calculator = new Calculator();
-            Assert.IsTrue(calculator.Add(2, 3) == 5);
+            IsTrue(calculator.Add(2, 3) == 5);
             //Assert.Fail();
         }
 
@@ -23,7 +17,7 @@ namespace MyFirstAppVueling.Tests
         public void SubtractTest()
         {
             Calculator calculator = new Calculator();
-            Assert.IsTrue(calculator.Subtract(4, 2) == 2);
+            IsTrue(calculator.Subtract(4, 2) == 2);
             //Assert.Fail();
         }
 
@@ -31,7 +25,7 @@ namespace MyFirstAppVueling.Tests
         public void MultiplyTest()
         {
             Calculator calculator = new Calculator();
-            Assert.IsTrue(calculator.Multiply(4, 2) == 8);
+            IsTrue(calculator.Multiply(4, 2) == 8);
             //Assert.Fail();
         }
 
@@ -39,7 +33,7 @@ namespace MyFirstAppVueling.Tests
         public void DivideTest()
         {
             Calculator calculator = new Calculator();
-            Assert.IsTrue(calculator.Subtract(4, 2) == 2);
+            IsTrue(calculator.Subtract(4, 2) == 2);
             //Assert.Fail();
         }
     }
