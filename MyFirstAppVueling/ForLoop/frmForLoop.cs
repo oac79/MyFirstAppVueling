@@ -30,6 +30,22 @@ namespace MyFirstAppVueling.ForLoop
             var studentList = new List<Student>(); // recommended
             studentList.Add(student);
 
+            var students = new Dictionary<Guid, Student>();
+            students.Add(student.Guid, student);
+
+            int _i = 0;
+            while (_i < students.Count)
+            {
+                KeyValuePair<Guid, Student> entry = students.ElementAt(_i);
+                if (entry.Value.Name.Equals("Pepe"))
+                {
+                    MessageBox.Show("Pepe is found: " + entry.Value.Name +
+                       "is welcome, and his Guid is " +
+                       entry.Value.Guid.ToString());
+                }
+                _i++;
+            }
+
             for (int i = 0; i < studentList.Count; i++)
             {
                 MessageBox.Show(studentList[i].Name);

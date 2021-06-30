@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MyFirstAppVueling.ForeachLoop;
+using MyFirstAppVueling.ForLoop;
+
 
 namespace MyFirstAppVueling
 {
@@ -17,7 +19,7 @@ namespace MyFirstAppVueling
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmForEach());
+            Application.Run(new frmForLoop());
         }
     }
 }
